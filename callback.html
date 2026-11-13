@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Anmeldung · Nimodio</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+  <header><img src="logo.png" alt=""><a href="./">Nimodio</a></header>
+  <h1 id="h">Anmeldung wird abgeschlossen …</h1>
+  <p class="lead" id="p">Du wirst zurück zu Nimodio auf deinem PC geleitet.</p>
+</main>
+<script>
+  // Instagram erlaubt als Rückleitung nur https-Adressen. Diese Seite reicht den einmaligen Anmelde-Code
+  // unverändert an Nimodio auf deinem PC weiter. Hier wird nichts gespeichert oder ausgewertet.
+  (function () {
+    var q = new URLSearchParams(location.search);
+    if (q.get("code") || q.get("error")) {
+      location.replace("http://127.0.0.1:8771/callback/" + location.search);
+    } else {
+      document.getElementById("h").textContent = "Keine Anmeldung offen";
+      document.getElementById("p").textContent = "Starte die Anmeldung in Nimodio unter Konto → Accounts → Verbinden.";
+    }
+  })();
+</script>
+</body>
+</html>
