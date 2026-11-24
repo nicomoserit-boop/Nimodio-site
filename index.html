@@ -1,33 +1,95 @@
 <!doctype html>
-<html lang="de">
+<html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Nimodio</title>
-<meta name="description" content="Nimodio schneidet aus Gaming-Aufnahmen kurze Highlight-Videos und veröffentlicht sie auf den eigenen Kanälen.">
-<link rel="icon" href="logo.png">
+<title>Nimodio – Gaming highlights to short videos</title>
+<meta name="description" content="Nimodio is a Windows desktop app that turns gaming recordings into short vertical videos and publishes them to your own TikTok, YouTube and Instagram accounts.">
+<link rel="icon" type="image/png" sizes="512x512" href="icon-512.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+<link rel="shortcut icon" href="favicon.ico">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta property="og:title" content="Nimodio – Gaming highlights to short videos">
+<meta property="og:image" content="icon-1024.png">
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<main>
-  <header><img src="logo.png" alt=""><a href="./">Nimodio</a></header>
-  <h1>Highlights aus Gaming-Aufnahmen, fertig zum Posten.</h1>
-  <p class="lead">Nimodio ist eine Desktop-App für Windows. Sie findet in langen Gaming-Aufnahmen die besten Momente, schneidet daraus kurze Hochformat-Videos und veröffentlicht sie auf deinen eigenen Kanälen.</p>
+<header class="top"><div class="wrap">
+  <a class="brand" href="index.html"><img src="icon-512.png" alt="Nimodio app icon" width="36" height="36">Nimodio</a>
+  <nav><a href="index.html" class=on>Home</a><a href="features.html">Features</a><a href="faq.html">FAQ</a><a href="contact.html">Contact</a></nav>
+</div></header>
+<main class="wrap">
+<section class="hero">
+  <div>
+    <p class="eyebrow">Desktop app for Windows</p>
+    <h1>Turn your gaming recordings into ready-to-post short videos.</h1>
+    <p class="lead">Nimodio finds the best moments in your gameplay, cuts them into vertical clips with captions, hook text and cover image, and publishes them to your own TikTok, YouTube and Instagram accounts – when you say so.</p>
+    <div class="cta"><a class="btn pri" href="contact.html">Get Nimodio</a><a class="btn" href="features.html">See all features</a></div>
+  </div>
+  <div class="mock" aria-hidden="true">
+    <div class="screen">
+      <div class="frame"><span class="hook">3 enemies. 1 grenade.</span><span class="play"></span></div>
+      <div class="tl"><i style="width:34%"></i><i class="b" style="width:22%"></i><i style="width:28%"></i></div>
+      <div class="tl s"><i class="y" style="width:18%"></i></div>
+      <div class="tools"><b></b><b></b><b></b><b></b><b></b><b></b></div>
+    </div>
+  </div>
+</section>
 
-  <h2>Was Nimodio macht</h2>
-  <ul>
-    <li>Aufnahmen auf deinem PC analysieren und Highlights als Reels, Shorts und TikToks schneiden</li>
-    <li>Titel, Caption und Titelbild vorschlagen. Du bewertest und entscheidest.</li>
-    <li>Videos planen und zum gewählten Termin auf deinen verbundenen Konten veröffentlichen (Instagram, YouTube, TikTok)</li>
+<section>
+  <h2>Everything from recording to post</h2>
+  <div class="grid3">
+    <div class="card"><h3>Automatic highlights</h3><p>Nimodio analyses sound and motion in your recordings and suggests the strongest moments as short clips. Swipe to keep or discard – it learns what you like.</p></div>
+    <div class="card"><h3>Vertical editor</h3><p>Trim, split, join and reorder clips, change speed, add freeze frames, zoom, track a moving object, add sounds, music and effects – on your PC or your phone.</p></div>
+    <div class="card"><h3>Captions, hook and cover</h3><p>Get caption and hook suggestions in your channel’s style, a hook text that appears in the first seconds and a designed cover image with your logo.</p></div>
+    <div class="card"><h3>Your brand</h3><p>Channel logo, colours, intro and outro are added to every video, so your clips look consistent across platforms.</p></div>
+    <div class="card"><h3>Planning</h3><p>Distribute ready videos over your posting days and times in a calendar. You decide what goes out and when.</p></div>
+    <div class="card"><h3>Statistics</h3><p>See views, likes, comments, shares and follower growth of your own posts in one place, compared with the previous period.</p></div>
+  </div>
+</section>
+
+<section>
+  <h2>How it works</h2>
+  <ol class="steps">
+    <li><b>Record</b><span>Play and record as usual with OBS, NVIDIA, Xbox Game Bar or AMD. Nimodio watches the folder you choose.</span></li>
+    <li><b>Review</b><span>Nimodio suggests highlight clips. Keep the good ones with a swipe and fine-tune them in the editor.</span></li>
+    <li><b>Schedule</b><span>Pick a date and time in the planner, check caption and cover.</span></li>
+    <li><b>Publish</b><span>At the scheduled time Nimodio uploads the video to the accounts you connected – or you post it yourself with the prepared caption.</span></li>
+  </ol>
+</section>
+
+<section class="split">
+  <div>
+    <h2>Your accounts, your decision</h2>
+    <p>You connect TikTok, YouTube or Instagram by signing in on the platform’s own page. Nimodio never sees your passwords. It only publishes videos that you approve or schedule, with the caption, privacy level and interaction settings you choose. You can disconnect at any time.</p>
+    <p><a href="privacy.html#tiktok">How Nimodio uses TikTok data →</a></p>
+  </div>
+  <div>
+    <h2>Private by design</h2>
+    <p>Nimodio runs on your own PC. Your recordings, videos and account tokens stay there. There is no Nimodio cloud account, no tracking and no advertising. Read our <a href="privacy.html">Privacy Policy</a>.</p>
+  </div>
+</section>
+
+<section>
+  <h2>Requirements</h2>
+  <ul class="ticks">
+    <li>Windows 10 or 11 (64-bit)</li>
+    <li>Gaming recordings as MP4, MKV, MOV or similar</li>
+    <li>Optional: a TikTok, YouTube or Instagram professional account for direct publishing</li>
+    <li>Optional: a phone in the same Wi-Fi network to edit on the go</li>
   </ul>
+  <p class="mut">Questions? Read the <a href="faq.html">FAQ</a> or <a href="contact.html">contact us</a>.</p>
+</section>
 
-  <h2>Deine Konten, deine Entscheidung</h2>
-  <p>Nimodio veröffentlicht nur auf Konten, die du selbst verbunden hast, und nur Videos, die du freigibst oder für einen Termin einplanst. Nimodio läuft auf deinem PC. Deine Videos und Zugangsdaten bleiben dort.</p>
-
-  <h2>Kontakt</h2>
-  <p>Kelbsquad · <a href="mailto:kelbsquad@gmail.com">kelbsquad@gmail.com</a></p>
-
-  <nav><a href="datenschutz.html">Datenschutzerklärung</a><a href="nutzungsbedingungen.html">Nutzungsbedingungen</a></nav>
 </main>
+<footer><div class="wrap">
+  <div class="brand"><img src="icon-512.png" alt="" width="28" height="28">Nimodio</div>
+  <div class="links">
+    <a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Service</a>
+    <a href="datenschutz.html">Datenschutz</a><a href="nutzungsbedingungen.html">Nutzungsbedingungen</a>
+    <a href="contact.html">Contact</a>
+  </div>
+  <p class="mut">© 2026 Nico Moser · Nimodio is an independent app and is not affiliated with TikTok, YouTube or Instagram.</p>
+</div></footer>
 </body>
 </html>
